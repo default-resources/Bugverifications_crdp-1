@@ -9,6 +9,18 @@
   "icon": "book",
   "pages": [
     {
+      "id": "Schedule",
+      "isDefault": false
+    },
+    {
+      "id": "New vehicle",
+      "isDefault": false
+    },
+    {
+      "id": "Home page",
+      "isDefault": false
+    },
+    {
       "id": "Bug14620",
       "isDefault": false
     },
