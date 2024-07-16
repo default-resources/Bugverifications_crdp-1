@@ -163,6 +163,10 @@
     {
       "id": "Page20 Copy",
       "isDefault": false
+    },
+    {
+      "id": "Release Regression Coverage",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
