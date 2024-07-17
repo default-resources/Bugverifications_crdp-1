@@ -1,1 +1,1 @@
-SELECT gender, latitude, longitude FROM users ORDER BY id LIMIT 10;
+SELECT * FROM public."details" LIMIT 10;
