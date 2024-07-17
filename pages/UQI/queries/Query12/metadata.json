@@ -16,6 +16,9 @@
         "deleteKeyPath": {
           "data": ""
         },
+        "entityType": {
+          "data": "ROWS"
+        },
         "limitDocuments": {
           "data": "10"
         },

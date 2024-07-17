@@ -22,10 +22,9 @@
     }
   },
   "columnOrder": [
-    "Sl_No",
-    "Scenario_",
-    "Column_3",
-    "DataTypes_",
+    "Name",
+    "DOB",
+    "Gender",
     "rowIndex"
   ],
   "columnSizeMap": {
@@ -73,16 +72,13 @@
       "key": "primaryColumns.rowIndex.computedValue"
     },
     {
-      "key": "primaryColumns.Sl_No.computedValue"
+      "key": "primaryColumns.Name.computedValue"
     },
     {
-      "key": "primaryColumns.Scenario_.computedValue"
+      "key": "primaryColumns.DOB.computedValue"
     },
     {
-      "key": "primaryColumns.Column_3.computedValue"
-    },
-    {
-      "key": "primaryColumns.DataTypes_.computedValue"
+      "key": "primaryColumns.Gender.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -110,77 +106,58 @@
   "parentId": "0",
   "parentRowSpace": 10,
   "primaryColumns": {
-    "Column_3": {
+    "DOB": {
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Column_3))}}",
+      "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.DOB))}}",
       "enableFilter": true,
       "enableSort": true,
       "horizontalAlignment": "LEFT",
-      "id": "Column_3",
-      "index": 2,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isVisible": true,
-      "label": "Column_3",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "DataTypes_": {
-      "cellBackground": "",
-      "columnType": "text",
-      "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.DataTypes_))}}",
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "DataTypes_",
-      "index": 3,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isVisible": true,
-      "label": "DataTypes_",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "Scenario_": {
-      "cellBackground": "",
-      "columnType": "text",
-      "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Scenario_))}}",
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "Scenario_",
+      "id": "DOB",
       "index": 1,
       "isCellVisible": true,
       "isDerived": false,
       "isDisabled": false,
       "isVisible": true,
-      "label": "Scenario_",
+      "label": "DOB",
       "textColor": "",
       "textSize": "0.875rem",
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "Sl_No": {
+    "Gender": {
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Sl_No))}}",
+      "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Gender))}}",
       "enableFilter": true,
       "enableSort": true,
       "horizontalAlignment": "LEFT",
-      "id": "Sl_No",
+      "id": "Gender",
+      "index": 2,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Gender",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "Name": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Name))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "Name",
       "index": 0,
       "isCellVisible": true,
       "isDerived": false,
       "isDisabled": false,
       "isVisible": true,
-      "label": "Sl_No",
+      "label": "Name",
       "textColor": "",
       "textSize": "0.875rem",
       "verticalAlignment": "CENTER",

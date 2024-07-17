@@ -46,11 +46,11 @@
         },
         "sheetName": {
           "componentData": "Sheet1",
-          "data": "Data Type handling",
+          "data": "Sheet1",
           "viewType": "component"
         },
         "sheetUrl": {
-          "data": "https://docs.google.com/spreadsheets/d/1Dj4loojZza3djtGztabO28wEJcH5zrch8vjcSKWmB8o/edit"
+          "data": "https://docs.google.com/spreadsheets/d/1yRlWCGbf0N90IZbtjsgg6G_8zCMhcxVoP4k2gH5H9nQ/edit"
         },
         "smartSubstitution": {
           "componentData": true,
