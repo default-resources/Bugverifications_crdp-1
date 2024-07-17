@@ -1,0 +1,2 @@
+DELETE FROM PUBLIC.TESTING
+  WHERE COUNTRY_NAME = {{data_table.triggeredRow.COUNTRY_NAME}};

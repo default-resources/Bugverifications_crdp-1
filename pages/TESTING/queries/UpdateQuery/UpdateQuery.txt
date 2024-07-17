@@ -1,0 +1,7 @@
+UPDATE PUBLIC.TESTING SET
+		EMAIL = '{{update_form.fieldState.EMAIL.isVisible ? update_form.formData.EMAIL : update_form.sourceData.EMAIL}}',
+		POPULATION = '{{update_form.fieldState.POPULATION.isVisible ? update_form.formData.POPULATION : update_form.sourceData.POPULATION}}',
+    STATUS = '{{update_form.fieldState.STATUS.isVisible ? update_form.formData.STATUS : update_form.sourceData.STATUS}}',
+		COUNTRY_ID = '{{update_form.fieldState.COUNTRY_ID.isVisible ? update_form.formData.COUNTRY_ID : update_form.sourceData.COUNTRY_ID}}',
+		COUNTRY_CODE = '{{update_form.fieldState.COUNTRY_CODE.isVisible ? update_form.formData.COUNTRY_CODE : update_form.sourceData.COUNTRY_CODE}}'
+WHERE COUNTRY_NAME = {{data_table.selectedRow.COUNTRY_NAME}};

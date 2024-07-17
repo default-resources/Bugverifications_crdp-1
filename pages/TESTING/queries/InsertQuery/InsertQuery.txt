@@ -1,0 +1,14 @@
+INSERT INTO PUBLIC.TESTING (
+	COUNTRY_NAME,
+	EMAIL,
+	POPULATION,
+	STATUS,
+	COUNTRY_ID,
+	COUNTRY_CODE)
+VALUES (
+	'{{insert_form.formData.COUNTRY_NAME}}',
+	'{{insert_form.formData.EMAIL}}',
+	'{{insert_form.formData.POPULATION}}',
+	'{{insert_form.formData.STATUS}}',
+	'{{insert_form.formData.COUNTRY_ID}}',
+	'{{insert_form.formData.COUNTRY_CODE}}');
