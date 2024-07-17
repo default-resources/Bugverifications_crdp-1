@@ -23,15 +23,17 @@
   },
   "columnOrder": [
     "id",
-    "gender",
-    "latitude",
-    "longitude",
-    "dob",
-    "phone",
-    "email",
-    "image",
-    "country",
     "name",
+    "createdAt",
+    "updatedAt",
+    "status",
+    "gender",
+    "avatar",
+    "email",
+    "address",
+    "role",
+    "dob",
+    "phoneNo",
     "customColumn1"
   ],
   "columnSizeMap": {
@@ -97,28 +99,34 @@
       "key": "primaryColumns.gender.computedValue"
     },
     {
-      "key": "primaryColumns.latitude.computedValue"
-    },
-    {
-      "key": "primaryColumns.longitude.computedValue"
-    },
-    {
       "key": "primaryColumns.dob.computedValue"
-    },
-    {
-      "key": "primaryColumns.phone.computedValue"
     },
     {
       "key": "primaryColumns.email.computedValue"
     },
     {
-      "key": "primaryColumns.image.computedValue"
-    },
-    {
-      "key": "primaryColumns.country.computedValue"
-    },
-    {
       "key": "primaryColumns.name.computedValue"
+    },
+    {
+      "key": "primaryColumns.createdAt.computedValue"
+    },
+    {
+      "key": "primaryColumns.updatedAt.computedValue"
+    },
+    {
+      "key": "primaryColumns.status.computedValue"
+    },
+    {
+      "key": "primaryColumns.avatar.computedValue"
+    },
+    {
+      "key": "primaryColumns.address.computedValue"
+    },
+    {
+      "key": "primaryColumns.role.computedValue"
+    },
+    {
+      "key": "primaryColumns.phoneNo.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -163,20 +171,58 @@
   "parentRowSpace": 10,
   "primaryColumnId": "id",
   "primaryColumns": {
-    "country": {
+    "address": {
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.country))}}",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.address))}}",
       "enableFilter": true,
       "enableSort": true,
       "horizontalAlignment": "LEFT",
-      "id": "country",
+      "id": "address",
       "index": 8,
       "isCellVisible": true,
       "isDerived": false,
       "isDisabled": false,
       "isVisible": true,
-      "label": "country",
+      "label": "address",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "avatar": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.avatar))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "avatar",
+      "index": 6,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "avatar",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "createdAt": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.createdAt))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "createdAt",
+      "index": 2,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "createdAt",
       "textColor": "",
       "textSize": "0.875rem",
       "verticalAlignment": "CENTER",
@@ -281,63 +327,6 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "image": {
-      "cellBackground": "",
-      "columnType": "text",
-      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.image))}}",
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "image",
-      "index": 7,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isVisible": true,
-      "label": "image",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "latitude": {
-      "cellBackground": "",
-      "columnType": "text",
-      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.latitude))}}",
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "latitude",
-      "index": 2,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isVisible": true,
-      "label": "latitude",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "longitude": {
-      "cellBackground": "",
-      "columnType": "text",
-      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.longitude))}}",
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "longitude",
-      "index": 3,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isVisible": true,
-      "label": "longitude",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
     "name": {
       "cellBackground": "",
       "columnType": "text",
@@ -357,20 +346,77 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "phone": {
+    "phoneNo": {
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.phone))}}",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.phoneNo))}}",
       "enableFilter": true,
       "enableSort": true,
       "horizontalAlignment": "LEFT",
-      "id": "phone",
-      "index": 5,
+      "id": "phoneNo",
+      "index": 11,
       "isCellVisible": true,
       "isDerived": false,
       "isDisabled": false,
       "isVisible": true,
-      "label": "phone",
+      "label": "phoneNo",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "role": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.role))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "role",
+      "index": 9,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "role",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "status": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.status))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "status",
+      "index": 4,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "status",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "updatedAt": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.updatedAt))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "updatedAt",
+      "index": 3,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "updatedAt",
       "textColor": "",
       "textSize": "0.875rem",
       "verticalAlignment": "CENTER",

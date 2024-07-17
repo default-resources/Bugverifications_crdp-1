@@ -155,6 +155,7 @@
       "name": "GSheets",
       "pluginId": "google-sheets-plugin"
     },
+    "dynamicBindingPathList": [],
     "executeOnLoad": true,
     "name": "SelectQuery",
     "pageId": "Release Regression Coverage",
